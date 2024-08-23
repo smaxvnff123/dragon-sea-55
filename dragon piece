@@ -1,0 +1,737 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))() --This Will Load The Script Code
+local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
+  local Window = OrionLib:MakeWindow({
+		Name = "Smax Hub | Dragon Piece",
+		HidePremium = false,
+		SaveConfig = true,
+		ConfigFolder = "OrionTest",
+        IntroText = "By Smax VN"       
+})
+
+local Tab = Window:MakeTab({
+	Name = "AUTO ORB KUKU",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "AUTO ORB KUKU"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "AUTO ORB KUKU",
+	Content = "AUTO ORB KUKU",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "TELEPORT ORB",
+	Default = false,
+	Callback = function(Value)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 
+CFrame.new(1559.592529296875, 21.832265853881836, -2392.388916015625)
+	end
+})
+
+
+Tab:AddButton({
+	Name = "AUTO ORB",
+	Callback = function()
+      		while wait(0) do local args = {
+    [1] = 1,
+    [2] = Vector3.new(1560.6531982421875, 21.833120346069336, -2432.01953125)
+}
+
+game:GetService("Players").LocalPlayer.Character.TrueTripleKatana.Combat.RemoteEvent:FireServer(unpack(args))
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "SPWAWN KUKU",
+	Default = false,
+	Callback = function(Value)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 
+CFrame.new(-100.9459228515625, 44.032039642333984, 922.69091796875)
+	end
+})
+
+Tab:AddButton({
+	Name = "ENGLISH OR CANADA KUKU",
+	Default = false,
+	Callback = function(Value)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 
+CFrame.new(-102.31462097167969, 44.032047271728516, 998.322265625)
+	end
+})
+
+Tab:AddButton({
+	Name = "AUTO KUKU",
+	Callback = function()
+      		while wait(0) do local args = {
+    [1] = 1,
+    [2] = Vector3.new(-183.80023193359375, 44.59170150756836, 763.9210815429688)
+}
+
+game:GetService("Players").LocalPlayer.Character.TrueTripleKatana.Combat.RemoteEvent:FireServer(unpack(args))
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "AUTO CHEST KUKU",
+	Default = false,
+	Callback = function(Value)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 
+CFrame.new(-180.4596405029297, 44.59170913696289, 753.4960327148438)
+	end
+})
+
+
+
+local Tab = Window:MakeTab({
+	Name = "AUTO ADMIN",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "AUTO ADMIN"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "AUTO ADMIN",
+	Content = "AUTO ADMIN",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+Tab:AddButton({
+	Name = "AUTO ADMIN",
+	Callback = function()
+      	 while wait(0) do local args = {
+    [1] = 1,
+    [2] = Vector3.new(17105.234375, 114.39594268798828, -267.6242980957031)
+}
+
+game:GetService("Players").LocalPlayer.Character.TrueTripleKatana.Combat.RemoteEvent:FireServer(unpack(args))
+end
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "PHOENIX",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "PHOENIX"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "PHOENIX",
+	Content = "PHOENIX",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+Tab:AddButton({
+	Name = "PHOENIX HEALTH",
+	Callback = function()
+      		while wait(0) do local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.Character.Phoenix.Skill5.Fire:FireServer(unpack(args))
+end
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "BROLY ZAMA",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "AUTO BROLY ZAMA"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "SKIBIDI",
+	Content = "AUTO BROLY ZAMA",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "NPC Bruly Chip",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1599.0372314453125, 85.30476379394531, -251.5753936767578)
+	end
+})
+
+Tab:AddButton({
+	Name = "START RAID",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1757.5714111328125, 54.38174819946289, -288.9324951171875)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "AUTO BROLY",
+	Callback = function()
+      		while wait(0) do local args = {
+    [1] = 1,
+    [2] = Vector3.new(16305.263671875, 30.78960609436035, -296.3280334472656)
+}
+
+game:GetService("Players").LocalPlayer.Character.TrueTripleKatana.Combat.RemoteEvent:FireServer(unpack(args))
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "NPC DEVILFRUIT (SEA 2)",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(587.9483642578125, 28.094295501708984, 39.90974426269531)
+	end
+})
+
+Tab:AddButton({
+	Name = "AUTO ZAMA",
+	Callback = function()
+      		while wait(0) do local args = {
+    [1] = 1,
+    [2] = Vector3.new(1650.699462890625, 100.2392807006836, 760.7784423828125)
+}
+
+game:GetService("Players").LocalPlayer.Character.TrueTripleKatana.Combat.RemoteEvent:FireServer(unpack(args))
+end
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "AUTO STATS",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "STATS"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "Smax",
+	Content = "AUTO STATS",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+Tab:AddButton({
+	Name = "MELEE",
+	Default = false,
+	Callback = function(Value)
+		while wait(0) do local args = {
+    [1] = "Melee"
+}
+
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer(unpack(args))
+end
+	end    
+})
+
+
+Tab:AddButton({
+	Name = "DEFENSE",
+	Default = false,
+	Callback = function(Value)
+		while wait(0) do local args = {
+    [1] = "MaxHealth"
+}
+
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer(unpack(args))
+end
+	end    
+})
+
+
+Tab:AddButton({
+	Name = "SWORD",
+	Default = false,
+	Callback = function(Value)
+		while wait(0) do local args = {
+    [1] = "Sword"
+}
+
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer(unpack(args))
+end
+	end    
+})
+
+
+Tab:AddButton({
+	Name = "DEVILFRUIT",
+	Default = false,
+	Callback = function(Value)
+		while wait(0) do local args = {
+    [1] = "DevilFruit"
+}
+
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer(unpack(args))
+end
+	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "TELEPORT NPC",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "TELEPORT NPC"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "Smax",
+	Content = "TELEPORT NPC",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+Tab:AddButton({
+	Name = "NPC COMBAT",
+	Default = false,
+	Callback = function(Value)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1282.2957763671875, 16.30670928955078, -586.8234252929688)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC KATANA",
+	Default = false,
+	Callback = function(Value)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1294.8734130859375, 16.30670738220215, -563.1982421875)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC GEPPO",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1261.0814208984375, 46.221012115478516, -440.8284606933594)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC DARK BLADE",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1283.251708984375, 16.30670738220215, -644.2044067382812)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC DEVILFRUIT (SEA 1)",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1163.239990234375, 14.313175201416016, -608.9921264648438)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC DEVILFRUIT (SEA 2)",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(587.9483642578125, 28.094295501708984, 39.90974426269531)
+	end
+})
+
+Tab:AddButton({
+	Name = "RESET STATS FREE (S1)",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1340.174072265625, 16.306713104248047, -686.27685546875)
+	end
+})
+
+Tab:AddButton({
+	Name = "RESET STATS FREE (S2)",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1180.0152587890625, 54.47934341430664, 71.55203247070312)
+	end
+})
+
+Tab:AddButton({
+	Name = "RESET FRUIT (S2)",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1172.1336669921875, 54.47934341430664, 71.78030395507812)
+	end
+})
+
+Tab:AddButton({
+	Name = "SAILBOAT AND NIMBUS",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1415.154541015625, 11.985852241516113, -749.6160278320312)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC BLACKLEG",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(563.5427856445312, 88.98798370361328, -1869.4398193359375)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC TRIPLEKATANA (SEA 1)",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2839.639892578125, 9.684549331665039, -2233.384765625)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC TRIPLEKATANA (SEA 2)",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1110.9884033203125, 85.4361572265625, -313.13507080078125)
+	end
+})
+
+Tab:AddButton({
+	Name = "BALL 4",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3994.89404296875, 98.7268295288086, -291.3712463378906)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC WATPERCLMBAT",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4852.892578125, 1666.4107666015625, -131.14059448242188)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC POLE",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5320.76416015625, 2707.8056640625, -3647.36181640625)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC V20RB (YORU)",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1692.2080078125, 57.1462516784668, 1316.77197265625)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC DARKBLADEAWAKE",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-420.4580078125, 22.178709030151367, -904.8939819335938)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC TELEPORT SEA 2",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3187.607421875, 12.149444580078125, 2211.296142578125)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC RANDOM RACE",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(729.7062377929688, 27.99427032470703, -58.765037536621094)
+	end
+})
+
+Tab:AddButton({
+	Name = "NPC Bruly Chip",
+	Default = false,
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1599.0372314453125, 85.30476379394531, -251.5753936767578)
+	end
+})
+
+Tab:AddButton({
+	Name = "START RAID",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1757.5714111328125, 54.38174819946289, -288.9324951171875)
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "ISLAND LEVEL (SEA 1)",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "ISLAND LEVEL (S1)"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "SKIBIDI",
+	Content = "ISLAND LEVEL (S1)",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "Level +0",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1353.9697265625, 16.712472915649414, -612.9972534179688)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Level +100",
+	Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(529.1537475585938, 34.836795806884766, -1673.3875732421875)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Level +200",
+	Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2801.040771484375, 39.636661529541016, -2096.930908203125)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Level +300",
+	Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1487.6044921875, 21.836082458496094, -2420.102783203125)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Level +350",
+	Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3676.912841796875, 15.217320442199707, -179.91897583007812)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Level +400",
+	Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4868.224609375, 1710.3341064453125, -134.92662048339844)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Level +500",
+	Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5260.7763671875, 2755.945068359375, -3700.727294921875)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Level +600",
+	Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1714.687255859375, 87.63475036621094, 1381.1192626953125)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Level +1000",
+	Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-446.78546142578125, 54.263240814208984, -816.0390014648438)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Level +1200",
+	Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1911.8260498046875, 29.535552978515625, 476.9580078125)
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "ISLAND BOSS (S1)",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "ISLAND BOSS (1)"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "Smax",
+	Content = "ISLAND BOSS",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+Tab:AddButton({
+	Name = "ISLAND BLACKUKU",
+	Default = false,
+	Callback = function(Value)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-87.84748077392578, 44.032047271728516, 915.3564453125)
+	end
+})
+
+Tab:AddButton({
+	Name = "ISLAND ADMIN",
+	Default = false,
+	Callback = function(Value)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(17286.52734375, 171.48257446289062, -37.38990020751953)
+	end
+})
+
+local Tab = Window:MakeTab({
+	Name = "ISLAND LEVEL (S2)",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "ISLAND LEVEL (S2)"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "SKIBIDI",
+	Content = "ISLAND LEVEL (S2)",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "LEVEL +1400",
+	Callback = function()
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1297.3035888671875, 69.9279556274414, -229.94227600097656)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "LEVEL +1450",
+	Callback = function()
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 
+CFrame.new(1401.78759765625, 77.82765197753906, -13.616798400878906)
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "ISLAND ZAMA",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "ISLAND ZAMA"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "SKIBIDI",
+	Content = "ISLAND ZAMA",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "ISLAND ZAMA",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1473.529541015625, 163.36602783203125, 484.5730285644531)
+  	end    
+})
+
+
+
+
+
+local Tab = Window:MakeTab({
+	Name = "MISC",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "MISC"
+})
+
+
+OrionLib:MakeNotification({
+	Name = "SKIBIDI",
+	Content = "MISC",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "FLY",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "INF YELD",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "SIMPLE SPY",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "IDK",
+	Callback = function()
+      		setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+  	end    
+})
