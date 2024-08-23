@@ -1,3 +1,12 @@
+local Weaponlist = {}
+function Update()
+    for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+        table.insert(Weaponlist,v.Name)
+    end   
+end
+Update()
+
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))() --This Will Load The Script Code
 local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
   local Window = OrionLib:MakeWindow({
@@ -9,6 +18,69 @@ local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
 })
 
 local Tab = Window:MakeTab({
+    Name = "AUTO WEAPON",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "AUTO WEAPON"
+})
+
+Tab:AddDropdown({
+    Name = "Select Weapon",
+    Default = "",
+    Options = Weaponlist,
+    Callback = function(Value)
+        Weapon = Value
+    end    
+})
+
+
+Tab:AddToggle({
+    Name = "Auto Equip Weapon",
+    Default = false,
+    Callback = function(Value)
+        AutoEquipWeapon = Value
+    end    
+})
+
+spawn(function()
+while wait() do
+if AutoEquipWeapon then
+pcall(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
+end)
+end
+end
+end)
+
+Tab:AddButton({
+    Name = "Refresh Weapon",
+    Callback = function()
+    table.remove(Weaponlist)
+    for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+    if v:IsA("Tool") then
+    table.insert(Weaponlist,v.Name)
+    end
+    end
+      end    
+})
+
+Tab:AddButton({
+    Name = "Refresh Weapon",
+    Callback = function()
+    table.remove(Weaponlist)
+    for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+    if v:IsA("Tool") then
+    table.insert(Weaponlist,v.Name)
+    end
+    end
+      end    
+})
+
+
+local Tab = Window:MakeTab({
 	Name = "AUTO ORB KUKU",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -18,13 +90,6 @@ local Section = Tab:AddSection({
 	Name = "AUTO ORB KUKU"
 })
 
-
-OrionLib:MakeNotification({
-	Name = "AUTO ORB KUKU",
-	Content = "AUTO ORB KUKU",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
 
 Tab:AddButton({
 	Name = "TELEPORT ORB",
@@ -103,14 +168,6 @@ local Section = Tab:AddSection({
 })
 
 
-OrionLib:MakeNotification({
-	Name = "AUTO ADMIN",
-	Content = "AUTO ADMIN",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-
 Tab:AddButton({
 	Name = "AUTO ADMIN",
 	Callback = function()
@@ -133,14 +190,6 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 	Name = "PHOENIX"
-})
-
-
-OrionLib:MakeNotification({
-	Name = "PHOENIX",
-	Content = "PHOENIX",
-	Image = "rbxassetid://4483345998",
-	Time = 5
 })
 
 
@@ -167,13 +216,6 @@ local Section = Tab:AddSection({
 	Name = "AUTO BROLY ZAMA"
 })
 
-
-OrionLib:MakeNotification({
-	Name = "SKIBIDI",
-	Content = "AUTO BROLY ZAMA",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
 
 Tab:AddButton({
 	Name = "NPC Bruly Chip",
@@ -233,14 +275,6 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 	Name = "STATS"
-})
-
-
-OrionLib:MakeNotification({
-	Name = "Smax",
-	Content = "AUTO STATS",
-	Image = "rbxassetid://4483345998",
-	Time = 5
 })
 
 
@@ -308,14 +342,6 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 	Name = "TELEPORT NPC"
-})
-
-
-OrionLib:MakeNotification({
-	Name = "Smax",
-	Content = "TELEPORT NPC",
-	Image = "rbxassetid://4483345998",
-	Time = 5
 })
 
 
@@ -506,13 +532,6 @@ local Section = Tab:AddSection({
 })
 
 
-OrionLib:MakeNotification({
-	Name = "SKIBIDI",
-	Content = "ISLAND LEVEL (S1)",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
 Tab:AddButton({
 	Name = "Level +0",
 	Callback = function()
@@ -603,14 +622,6 @@ local Section = Tab:AddSection({
 })
 
 
-OrionLib:MakeNotification({
-	Name = "Smax",
-	Content = "ISLAND BOSS",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-
 Tab:AddButton({
 	Name = "ISLAND BLACKUKU",
 	Default = false,
@@ -637,13 +648,6 @@ local Section = Tab:AddSection({
 	Name = "ISLAND LEVEL (S2)"
 })
 
-
-OrionLib:MakeNotification({
-	Name = "SKIBIDI",
-	Content = "ISLAND LEVEL (S2)",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
 
 Tab:AddButton({
 	Name = "LEVEL +1400",
@@ -672,22 +676,12 @@ local Section = Tab:AddSection({
 })
 
 
-OrionLib:MakeNotification({
-	Name = "SKIBIDI",
-	Content = "ISLAND ZAMA",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
 Tab:AddButton({
 	Name = "ISLAND ZAMA",
 	Callback = function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1473.529541015625, 163.36602783203125, 484.5730285644531)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1473.529541015625, 163.36602783203125,484.5730285644531)
   	end    
 })
-
-
-
 
 
 local Tab = Window:MakeTab({
@@ -700,13 +694,6 @@ local Section = Tab:AddSection({
 	Name = "MISC"
 })
 
-
-OrionLib:MakeNotification({
-	Name = "SKIBIDI",
-	Content = "MISC",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
 
 Tab:AddButton({
 	Name = "FLY",
